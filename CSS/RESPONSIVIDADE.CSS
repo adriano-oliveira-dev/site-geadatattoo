@@ -1,0 +1,235 @@
+/* ===== RESPONSIVIDADE ===== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    body {
+        padding-top: 90px;
+    }
+    
+    header {
+        height: 90px;
+    }
+    
+    #logo {
+        width: 220px;
+    }
+    
+    nav a {
+        font-size: 22px;
+        padding: 8px 16px;
+    }
+    
+    #banner {
+        height: 60vh;
+        min-height: 400px;
+    }
+    
+    .footer-content {
+        gap: 30px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    body {
+        padding-top: 0;
+    }
+    
+    header {
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 80px;
+        padding: 0 20px;
+    }
+    
+    #burger-menu {
+        display: block;
+        order: 1;
+    }
+    
+    #logo {
+        width: 180px;
+        order: 2;
+    }
+    
+    nav {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #afa4cf;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        border-top: 2px solid #ffd8bc;
+    }
+    
+    nav.active {
+        display: block;
+        animation: slideDown 0.3s ease;
+    }
+    
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    nav a {
+        font-size: 20px;
+        text-align: center;
+        padding: 15px;
+        border: 1px solid rgba(255, 216, 188, 0.3);
+    }
+    
+    #banner {
+        height: 50vh;
+        min-height: 300px;
+        background-size: contain;
+    }
+    
+    #texto {
+        padding: 60px 20px;
+    }
+    
+    .description {
+        font-size: 18px;
+        width: 90%;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 35px;
+        text-align: center;
+    }
+    
+    .footer-section {
+        min-width: 100%;
+    }
+    
+    .contact-info p,
+    .business-hours p {
+        justify-content: center;
+        text-align: left;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .social-links a {
+        justify-content: center;
+    }
+    
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        bottom: 25px;
+        right: 25px;
+        font-size: 28px;
+    }
+    
+    /* RESPONSIVIDADE DO FORMULÁRIO */
+    #contato-form {
+        padding: 60px 15px;
+    }
+    
+    .form-container {
+        padding: 30px 25px;
+        margin: 0 10px;
+    }
+    
+    .form-container h2 {
+        font-size: 2rem;
+    }
+    
+    .contact-form {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .submit-btn {
+        padding: 16px 30px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Mobile Pequeno */
+@media (max-width: 480px) {
+    header {
+        padding: 0 15px;
+    }
+    
+    #logo {
+        width: 150px;
+    }
+    
+    #banner {
+        height: 40vh;
+        min-height: 250px;
+        background-size: contain;
+    }
+    
+    #texto {
+        padding: 40px 15px;
+    }
+    
+    .description {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    
+    footer {
+        padding: 40px 0 15px;
+    }
+    
+    .footer-content {
+        padding: 0 15px;
+        gap: 30px;
+    }
+    
+    .footer-section h3 {
+        font-size: 18px;
+    }
+    
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 24px;
+    }
+    
+    #burger-menu {
+        font-size: 26px;
+    }
+    
+    /* RESPONSIVIDADE DO FORMULÁRIO */
+    .form-container {
+        padding: 25px 20px;
+    }
+    
+    .form-container h2 {
+        font-size: 1.8rem;
+    }
+    
+    .form-subtitle {
+        font-size: 1rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 12px 15px;
+    }
+}
