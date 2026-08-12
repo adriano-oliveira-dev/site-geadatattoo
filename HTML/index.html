@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geada Tattoo</title>
+    <link rel="stylesheet" href="../CSS/HOME-PAGE.CSS">
+    <link rel="stylesheet" href="../CSS/RESPONSIVIDADE.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+<body>
+    <!-- Botão WhatsApp DENTRO do body -->
+    <a href="https://wa.me/5584996261018" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <header>
+        <a href="#" id="burger-menu">
+            <span class="material-symbols-outlined">menu</span>
+        </a>
+       <img id="logo" src="../img/logoD2.png" alt="Geada Tattoo Logo"> 
+       
+        <nav id="nav-menu">
+            <ul>
+                <li><a href=#home>Home</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Conteúdo principal -->
+    <main>
+        <div id="banner"></div>
+        
+        <div id="texto">
+            <p class="description">
+                Se tattoos delicadas e de traços finos são seu estilo, 
+                você está no lugar certo! Estamos esperando por você!
+            </p>
+        </div>
+    </main>
+
+    <!-- Seção do Formulário de Contato -->
+    <section id="contato-form">
+        <div class="form-container">
+            <h2>Agende seu Horário</h2>
+            <p class="form-subtitle">Preencha o formulário abaixo e entraremos em contato para confirmar seu agendamento</p>
+            
+            <form class="contact-form" id="agendamentoForm">
+                <div class="form-group">
+                    <label for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefone">Telefone/WhatsApp *</label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="(84) 99999-9999">
+                </div>
+                
+                <div class="form-group">
+                    <label for="tipo-tattoo">Tipo de Tattoo Desejada</label>
+                    <select id="tipo-tattoo" name="tipo-tattoo">
+                        <option value="">Selecione uma opção</option>
+                        <option value="delicada">Tattoo Delicada</option>
+                        <option value="traços-finos">Traços Finos</option>
+                        <option value="minimalista">Minimalista</option>
+                        <option value="outro">Outro estilo</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="localizacao">Localização no Corpo</label>
+                    <input type="text" id="localizacao" name="localizacao" placeholder="Braço, costas, perna...">
+                </div>
+                
+                <div class="form-group">
+                    <label for="tamanho">Tamanho Aproximado (cm)</label>
+                    <input type="text" id="tamanho" name="tamanho" placeholder="10x15 cm">
+                </div>
+                
+                <div class="form-group full-width">
+                    <label for="descricao">Descreva sua Ideia *</label>
+                    <textarea id="descricao" name="descricao" rows="6" required placeholder="Descreva detalhadamente o que você imagina para sua tattoo..."></textarea>
+                </div>
+                
+                <div class="form-group full-width">
+                    <label for="referencias">Tem alguma referência? (links, descrição)</label>
+                    <textarea id="referencias" name="referencias" rows="3" placeholder="Links do Pinterest, Instagram ou descrição de referências..."></textarea>
+                </div>
+                
+                <div class="form-group full-width checkbox-group">
+                    <input type="checkbox" id="orcamento" name="orcamento">
+                    <label for="orcamento">Gostaria de receber um orçamento aproximado</label>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i>
+                    Enviar Agendamento
+                </button>
+            </form>
+        </div>
+    </section>
+
+    
+    <footer id="contato">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> (84) 99626-1018</p>
+                    <p><i class="fas fa-envelope"></i> geadatattoo@email.com</p>
+                   <!-- Link do Maps estilizado -->
+                    <a href="https://maps.app.goo.gl/fAUpu4sYHmee1chS6" target="_blank" class="maps-link">
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i> 
+                            <span class="address-text">
+                                Rua Heráclito Vilar, 820, Centro,<br>
+                                Galeria Heráclito Vilar, Sala 10,<br>
+                                Ceará-Mirim RN, 59570-000, Brasil.
+                            </span>
+                        </p>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <div class="social-links">
+                    <a href="https://instagram.com/geadatattoo" target="_blank">
+                        <i class="fab fa-instagram"></i> @geadatattoo
+                    </a>
+                    <a href="https://wa.me/5584996261018" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="https://facebook.com/geadatattoo" target="_blank">
+                        <i class="fab fa-facebook"></i> Facebook
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Horário de Funcionamento</h3>
+                <div class="business-hours">
+                    <p>Segunda: 14h - 18h</p>
+                    <p>Terça e Quinta: 10h - 16h</p>
+                    <p>Quarta, Sexta e Sábado: 10h - 18h</p>
+                    <p>Domingo: Fechado</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Geada Tattoo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="../JS/HOME-PAGE.JS"></script>
+</body>
+</html>
